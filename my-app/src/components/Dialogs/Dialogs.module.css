@@ -1,0 +1,76 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+}
+
+.dialogsItems {
+    padding: 10px;
+    color: white;
+
+
+}
+
+.dialogsItems .active {
+    color: gold;
+
+}
+
+.messages {
+    padding: 10px;
+
+
+}
+
+.messageMain {
+    display: flex;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+.sender {
+    display: flex;
+    justify-content: flex-end;
+}
+.recipient {
+    display: flex;
+}
+
+
+.messages .message {
+
+}
+
+.dialogs img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 5px;
+
+}
+
+.newMessageField {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-template-areas:
+      "ta c"
+      "ta b";
+    padding: 20px;
+    gap: 20px;
+}
+
+.newMessageField textarea {
+    height: 60px;
+    resize: none;
+    grid-area: ta;
+}
+.newMessageField button {
+    height: 30px;
+    grid-area: b;
+}
+
